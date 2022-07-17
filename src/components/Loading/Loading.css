@@ -1,0 +1,11 @@
+.Loading{
+    display: flex;
+    margin: 0 !important;
+    padding: 0 !important;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+}

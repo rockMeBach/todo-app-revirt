@@ -1,0 +1,55 @@
+:root {
+    --greyCompletedTask: #202020;
+    --greyTiles: #2f2f2f;
+}
+
+@media only screen and (max-width: 568px){
+    .Task{
+        margin-right: 0 !important;
+    }
+}
+
+.Task{
+    background-color: var(--greyTiles);
+    border-radius: 7px;
+    position: relative;
+    max-width: 26rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    margin-right: 2.5rem;
+    box-shadow: 0px 0px 25px black;
+}
+
+.TaskCompleted{
+    background-color: var(--greyCompletedTask);
+    border: solid 1px #7AB530;
+    box-shadow: none !important;
+}
+
+/* the number that appears before each task */
+.Task::before{
+    display: block;
+    position: absolute;
+    left: -5.2rem;
+    font-size: 16px;
+    content: attr(data-content);
+    font-weight: 400;
+    width: 70px;
+    height: 70px;
+    line-height: 65px;
+    text-shadow: none;
+    color: white;
+    text-align: end;
+}
+
+.tick{
+    background-color: #7AB530;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    text-align: center;
+    position: absolute;
+    right: -15px;
+    top: 15px;
+}
